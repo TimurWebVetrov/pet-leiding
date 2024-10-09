@@ -1,0 +1,45 @@
+// @mixin color-blue
+// 	color: #1EACC7
+	
+// @include color-blue
+
+@mixin label-black
+	margin: 0 auto 
+	height: 24px 
+	width: 112px 
+	padding: 5px 12px 
+	background-color: #000000 
+	color: #ffffff 
+	font-size: 11px 
+	font-weight: 300  
+	text-transform: uppercase
+@mixin title-black
+	margin-bottom: 30px 
+	margin-top: 30px 
+	color: #222222 
+	font-size: 38px 
+	font-weight: 700 
+	text-transform: uppercase 
+	text-align: center
+@mixin subtitle-black
+	display: block 
+	font-style: normal 
+	font-weight: 400 
+	font-size: 17px 
+	line-height: 21px 
+	text-align: center 
+	color: #222222 
+	
+
+@mixin btn_hover
+	&:hover
+		background: linear-gradient(0deg, $color-blue 0%, #4e7cfc 100%)
+		box-shadow: 0px 0px 10px rgba(23, 221, 228, 0.4) 
+
+@mixin btn_focus
+	&:focus
+		border: none
+		outline: none
+		box-shadow: 0px 0px 10px rgba(23, 221, 228, 0.4)
+		background: linear-gradient(0deg, $color-blue 0%, #051d5e 100%)
+		transition: 0.5s all

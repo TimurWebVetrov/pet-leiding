@@ -1,0 +1,180 @@
+.overlay 
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    background-color: rgba(0,0,0, .56)
+.modal 
+    &__link 
+        position: fixed
+        bottom: 40px
+        right: 40px
+        width: 150px
+        height: 150px
+        img 
+            display: block
+            width: 100%
+            border: 1px solid #fff
+            border-radius: 100%
+            &:hover 
+                box-shadow: 1px 1px 5px $color-blue
+                border: 1px solid$color-blue
+    &__img-promo
+        display: block
+        margin: 0 auto
+        width: 200px
+        height: 200px
+    &__box 
+        position: absolute
+        top: 55%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 500px
+        min-height: 400px
+        background-color: #f2f2f2
+        padding: 30px 40px 40px 40px
+        border: solid 1px $color-blue
+        &_mini 
+            min-height: 140px
+        @media(max-width: 700px)
+            position: absolute
+            top: 55%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 70%
+            min-height: 40%
+            background-color: #f2f2f2
+            padding: 30px 40px 40px 40px
+            border: solid 1px $color-blue
+            &_mini 
+                min-height: 140px
+    &__img 
+        width: 124px
+        height: 144px
+        display: block
+        margin: 0 auto
+    &__close 
+        position: absolute
+        top: 0
+        right: -40px
+        font-size: 51px
+        line-height: 21px
+        color: $color-blue
+        cursor: pointer
+        &:hover 
+            text-shadow: 2px 2px 5px $color-blue
+    &__gift 
+        margin-top: 25px
+        text-align: center
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        line-height: 21px
+        text-align: center
+        color: #12a8d1
+        text-shadow: 1px 1px 2px #252525
+        &:hover > span 
+            text-shadow: 1px 1px 2px $color-blue
+        span 
+            color: $color-blue
+            text-decoration: underline
+        &_mini 
+            margin-top: 25px
+            text-align: center
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 400
+            font-size: 35px
+            line-height: 21px
+            text-align: center
+            color: #12a8d1
+            text-shadow: 1px 1px 2px #252525
+    &__descr 
+        margin-top: 40px
+        text-align: center
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 16px
+        text-align: center
+        color: #252525
+        &_mini 
+            margin-top: 40px
+            text-align: center
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 400
+            font-size: 18px
+            line-height: 16px
+            text-align: center
+            color: #252525
+    &__form 
+        margin: 0 auto
+        margin-top: 20px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 300px
+        gap: 15px
+        @media(max-width: 700px)
+            width: 250px
+        input 
+            height: 54px
+            border-radius: 5px
+            background-color: #fff
+            border: none
+            padding: 0 20px
+            color: #4B4B4B
+            font-size: 14px
+            font-weight: 300
+            line-height: 66px
+            outline-color: #12a8d1
+            &:-moz-placeholder 
+                color:$color-blue
+            
+            &:-ms-input-placeholder 
+                color: $color-blue
+        .error 
+            border: 1px solid $color-blue
+        
+        label.error 
+            color: $color-blue
+            text-shadow: 1px 1px 1px #b18624
+            margin-bottom: 5
+            font-size: 12px
+            text-align: center
+            border: none
+    
+    &__button 
+        width: 300px
+        height: 50px
+        border-radius: 5px
+        background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%)
+        cursor: pointer
+        font-family: 'Roboto'
+        font-size: 16px
+        line-height: 24px
+        font-weight: 400
+        text-transform: uppercase
+        color: #FFFFFF
+        margin: 20px auto
+        display: block
+        border: none
+        @include btn_hover
+        @include btn_focus
+        @media(max-width: 700px)
+            width: 250px
+
+
+
+
+        // &:focus 
+        //     border: 3px solid $color-blue
+        //     background: $color-blue
+        //     box-shadow: 0px 0px 10px rgba(228, 214, 23, 0.4)
+        
+    
+    
